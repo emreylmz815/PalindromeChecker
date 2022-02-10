@@ -1,0 +1,8 @@
+function palindrome(str) {
+  let re=/[\W_]/g
+  let lowerReg=str.toLowerCase().replace(re,"")
+  let reversed=lowerReg.split("").reverse().join("")
+  return lowerReg===reversed;
+}
+
+palindrome("eye");
